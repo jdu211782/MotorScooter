@@ -1,7 +1,7 @@
 import products from "./products.json" assert { type: "json" };
 const content = document.querySelector(".left-bar");
-const cart = []
-// const totalPrice = document.querySelector( ".totalPrice")
+let cart = ['1', '5'];
+const total_price = document.querySelector(".total_price");
 
 for (let i = 0; i < products.length; i++) {
   let product = `
@@ -18,46 +18,68 @@ for (let i = 0; i < products.length; i++) {
       </div>
     </div>
   `;
-  content.innerHTML +=product;
+  content.innerHTML += product;
 }
- 
 
-document.querySelectorAll(".btn").forEach ( (button) => {
-    button.addEventListener("click", function(e) {
-        cart.push(e.target.dataset.id); 
-        renderCart(e.target.dataset.id);
-        console.log(cart);
-    })
-})
+document.querySelectorAll(".btn").forEach((button) => {
+  button.addEventListener("click", function (e) {
+    cart.push(e.target.dataset.id);
+    renderCart(e.target.dataset.id);
+    total();
+  });
+});
 
-function renderCart(id){
-  let box;
-  for (let i = 0,len = products.length; i < len; i++) {
-      if(products[i].id == id) {
-          box = products[i];
-          break;
-      }   
-  }
-  document.querySelector('.right-bar').innerHTML +=`
-  <div class="small_cart">
-    <img class="small_image" src="./images/${box.image}">
-    <div class="small_cart_content">
-      Name: ${box.name} <br>
-      Price: ${box.price}${box.currency} <br>
-    </div>
-    <div class="button"> 
-      <button class="delete" data-id="${box.id}">delete</button>
-    </div>
-  </div> 
-  `
-  document.querySelectorAll(".delete").forEach(btn=>{
-    btn.addEventListener('click', function(e){
-      this.parentNode.parentNode.remove()
-    })
+document.querySelector(".clearCart").onclick = function(){
+  cart = [];
+  renderCart();
+  total();
+}
+
+function renderCart(id) {
+  document.querySelector(".upSide").innerHTML = "";
+
+  cart.forEach(itemId => {
+
+    document.querySelector(".upSide").innerHTML += `
+    <div class="small_cart">
+      <img class="small_image" src="./images/${products[itemId-1].image}">
+      <div class="small_cart_content">
+        Name: ${products[itemId-1].name} <br>
+        Price: ${products[itemId-1].price}${products[itemId-1].currency} <br>
+      </div>
+      <div class="button"> 
+        <button class="delete" data-id="${products[itemId-1].id}">delete</button>
+      </div>
+    </div> 
+    `;
   })
+
+  document.querySelectorAll(".delete").forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      // this.parentNode.parentNode.remove();
+      cart.forEach((itemId, index) => {
+        if(itemId == e.target.dataset.id) {
+          cart.splice(index, 1);
+        }
+      })
+      renderCart();
+      total();
+    });
+  });
 }
 
-// function total(id) { 
-//   let total = 0;
-//   total = box.price * box.id;}
+function total() {
+  const onlyTotal = document.querySelector(".totalPrice");
+  let totalPrice = 0;
 
+  if(cart.length > 0) {
+    cart.forEach((item) => {
+      totalPrice += products[item - 1].price;
+    });  
+  }
+  onlyTotal.innerHTML = "Total: $" + totalPrice;
+
+}
+
+total();
+renderCart();
