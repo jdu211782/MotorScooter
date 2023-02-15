@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../scooter"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "scooter"
+	}
+}

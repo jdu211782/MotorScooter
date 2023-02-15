@@ -1,0 +1,247 @@
+@media only screen and (max-width:1607px) {
+   .left {
+        width: 250px;
+        height: 280px;
+        /* margin-left: 0px; */
+        background-color: rgb(156,170,197);
+        color: black;
+        margin: 5%;
+        box-shadow: 0 0 10px;
+        border-radius: 4px;
+        transition: 0.5s;
+        transform: scale3d(1, 1, 1);
+  }
+
+    .image {
+        width: 220px;
+        height: 196px;
+        border-radius: 5px;
+        /* margin: 5px; */
+        cursor: pointer;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+  }
+
+    .cart_content {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        cursor: pointer;
+        margin-top: 3%;
+        font-size: 13px;
+  }
+
+    .small_cart_content {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        cursor: pointer;
+        margin-top: 3%;
+        font-size: 13px;
+  }
+
+    .btn {
+        cursor: pointer;
+        float:  right;
+        position: relative;
+        top: 5%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+  }
+
+    .delete {
+        cursor: pointer;
+        float: right;
+        margin-top: 20px;
+        position: relative;
+        top: 6%;
+        right: 5%;
+  }
+
+    .small_cart {
+        width: 220px;
+        height: 250px;
+        background-color: rgb(156,170,197);
+        color: black;
+        flex-wrap: wrap;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12%;
+        box-shadow: 0 0 15px;
+        border-radius: 5px;
+        transition: 0.5s;
+        transform: scale3d(1, 1, 1);
+  }
+
+    .small_image {
+        width: 200px;
+        height: 176px;
+        /* margin: 5px; */
+        cursor: pointer;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:1488px) {
+  .left {
+    width: 250px;
+    height: 280px;
+    /* margin-left: 0px; */
+    background-color: rgb(156,170,197);
+    color: black;
+    margin: 4%;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media only screen and (max-width:1370px) {
+  .left {
+    width: 250px;
+    height: 280px;
+    /* margin-left: 0px; */
+    background-color: rgb(156,170,197);
+    color: black;
+    margin: 3%;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media only screen and (max-width:1370px) {
+  .left {
+    width: 250px;
+    height: 280px;
+    /* margin-left: 0px; */
+    background-color: rgb(156,170,197);
+    color: black;
+    margin: 2%;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media only screen and (max-width:1183px) {
+  .left {
+    width: 220px;
+    height: 250px;
+    /* margin-left: 0px; */
+    background-color: rgb(156,170,197);
+    color: black;
+    margin: 2%;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+
+  .image {
+    width: 190px;
+    height: 166px;
+    border-radius: 5px;
+    /* margin: 5px; */
+    cursor: pointer;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+  .small_cart {
+    width: 200px;
+    height: 70px;
+    background-color: rgb(156,170,197);
+    color: black;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    box-shadow: 0 0 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+
+  .small_image {
+    width: 0px;
+    height: 0px;
+    /* margin: 5px; */
+    cursor: pointer;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:899px) {
+  .small_cart {
+    width: 160px;
+    height: 70px;
+    background-color: rgb(156,170,197);
+    color: black;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    box-shadow: 0 0 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    transform: scale3d(1, 1, 1);
+  }
+
+  .delete {
+    cursor: pointer;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 3%;
+    right: 5%;
+  }
+
+  .small_cart_content {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    cursor: pointer;
+    margin-top: 3%;
+    font-size: 12px;
+  }
+
+   .cart_content {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    cursor: pointer;
+    margin-top: 3%;
+    font-size: 12px;
+  }
+
+   .btn {
+  cursor: pointer;
+  float:  right;
+  position: relative;
+  top: 5%;
+  right: 5%;
+  width: 50px;
+  height: 40px;
+  border-radius: 4px;
+  }
+}
