@@ -73,8 +73,7 @@ background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,1
 background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
+overflow: scroll;
 }
 
 .bow {
