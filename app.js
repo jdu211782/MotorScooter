@@ -40,11 +40,7 @@ document.querySelector(".clearCart").onclick = function(){
   total();
   counters = 0;
   InnerCount();
-
 };
-
-
-
 
 function InnerCount(){
   document.querySelector("#count").innerHTML =  counters;
@@ -71,7 +67,6 @@ function renderCart(id) {
   })
 
   document.querySelectorAll(".delete").forEach((btn) => {
-    
     btn.addEventListener("click", function (e) {
       // this.parentNode.parentNode.remove();
       cart.every((itemId, index) => {
@@ -103,6 +98,8 @@ function total() {
     cart = [];
     renderCart();
     total();
+    counters = 0;
+    InnerCount();
   };
 }
 total();
