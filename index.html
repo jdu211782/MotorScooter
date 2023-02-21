@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motor Scooter Shop</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="responsive.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     
     <header class="head">
-      <h1 class="shop">Motor Scooter Shop</h1>
+      <div class="shop">Motor Scooter Shop</div>
+      <div class="cart-icon">
+        <span id="count">0</span>
+        <i class='bx bx-cart' id="n"></i>
+        <div class="car">Cart</div>
+      </div>
     </header>
 
     <div class="container">
       <div class="bow">
         <div class="title-1">Product</div>
-        <div class="title-2">Cart</div>
+        <!-- <div class="title-2">Cart</div> -->
       </div>
       <div class="bar">
-        <div class="row left-bar"></div>
-
+        <div class="row con left-bar"></div>
         <div class="row right-bar"> 
+          <i class='bx bx-x' id="close-cart"></i>
           <div class="downSide">
             <div class="totalPrice">Total</div>
+            <!-- <div class="BuyButton"></div>
+              <button class="Buy">Buy</button> -->
             <div class="clearCartButton">
+              <button class="Buy">Buy</button>
               <button class="clearCart">Clear cart</button>
             </div>
           </div>
           <div class="upSide">
-            
           </div>
         </div>
       </div>

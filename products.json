@@ -4,42 +4,48 @@
     "name": "Dualtron Mini",
     "price": 1499,
     "image": "product1.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   },
   {
     "id": 2,
     "name": "Dualtron Vector",
     "price": 3499,
     "image": "MotorScooter.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   },
   {
     "id": 3,
-    "name": "Dualtron Vector+",
+    "name": "Dualtron Vera+",
     "price": 4299,
     "image": "p.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   },
   {
     "id": 4,
     "name": "Dualtron",
     "price": 1999,
     "image": "MotorScooter2.2.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   },
   {
     "id": 5,
-    "name": "Dualtron Plus",
+    "name": "Dexter Pro",
     "price": 2599,
     "image": "MotorScooter3.1.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   },
   {
     "id": 6,
     "name": "Dualtron Gector",
     "price": 3499,
     "image": "MotorScooter4.1.jpeg",
-    "currency": "$"
+    "currency": "$",
+    "character": "Two-wheeled vehicle with a step-through chassis and footrest platform"
   }
 ]
 

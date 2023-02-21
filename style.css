@@ -1,118 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Raleway&display=swap');
-@import "responsive.css" ;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Play', sans-serif;
 
 }
+.mm{
+  display: flex;
+  
+}
+#n{
+  font-size: 120%;
+}
 
 .head {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28343b+12,828c95+100,b5bdc8+100 */
-background: rgb(40,52,59); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(40,52,59,1) 12%, rgba(130,140,149,1) 100%, rgba(181,189,200,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,52,59,1) 12%,rgba(130,140,149,1) 100%,rgba(181,189,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,52,59,1) 12%,rgba(130,140,149,1) 100%,rgba(181,189,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  max-width: 1920px;
-  height: 100px;
-  text-align: center;
-  font-size: x-large;
+  background-color: #293241;
+  display: flex;
+  justify-content: space-around;
+  /* max-width: 1920px; */
+  padding: 1%;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
-.shop {
+.cart-icon{
+  cursor: pointer;
+  display: flex;
+}
+
+/* .shop {
   color: rgb(255, 255, 255);
   padding-top: 20px;
-}
+} */
 
 .container {
   background-color:white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1920px;
   width: 100%;
   height: 160vh;
 }
 
 .left-bar {
-  width: 72%;
-  
-  
+  /* width: 80%; */
   /* height: 150vh; */
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+19,28343b+87 */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 19%, rgba(40,52,59,1) 87%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+  background-color:#fff ;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: flex-start; 
+}
+
+.con{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#close-cart{
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .right-bar {
-  width: 25%;
-  margin-right: 0%;
-  height: 150vh;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+19,28343b+87 */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 19%, rgba(40,52,59,1) 87%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 19%,rgba(40,52,59,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-overflow: scroll;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 380px;
+  /* height: 15vh; */
+  background-color: #eae1df;
+  /* overflow: scroll; */
+  border-radius: 10px;
+}
+
+.right-bar.active{
+  display: block;
 }
 
 .bow {
   height: 65px;
   width: 100%;
   display: flex;
-  color: black;
+  color: #293241;
+  font-weight: 700;
 }
 
 .bar {
   display: flex;
   justify-content: space-between;
+
+}
+
+.yon{
+  display: flex;
 }
 
 .left {
-  width: 270px;
-  height: 340px;
-  margin-left: 0px;
-  background-color: rgb(156,170,197);
-  color: black;
+  width: 395px;
+  height: 260px;
+  background-color:#fff;
+  /* #edf2f4; #8d99ae; */
+  color: #252422;
   margin: 5%;
-  box-shadow: 0 0 15px;
-  border-radius: 5px;
+  box-shadow: 0 0 5px;
+  border-radius: 10px;
   transition: 0.5s;
   transform: scale3d(1, 1, 1);
 }
 
 .small_cart {
-  width: 250px;
-  height: 310px;
-  background-color: rgb(156,170,197);
-  color: black;
-  flex-wrap: wrap;
-  display: block;
-  margin-left: auto;
+  width: 340px;
+  height: 170px;
+  background-color: #fff;
+  color: #403d39;
+  /* flex-wrap: wrap;
+  display: flex; */
+  /* align-items: center; */
+  /* margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  box-shadow: 0 0 15px;
-  border-radius: 5px;
+  margin-top: 10%; */
+  margin: 5%;
+  box-shadow: 0 0 5px;
+  border-radius: 10px;
   transition: 0.5s;
   transform: scale3d(1, 1, 1);
 }
@@ -121,84 +140,119 @@ overflow: scroll;
   transform: scale3d(1.1, 1.1, 2);
 }
 .image {
-  width: 240px;
-  height: 240px;
-  /* margin: 5px; */
+  width: 230px;
+  height: 230px;
   cursor: pointer;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-top: 15px;
 }
 
 .small_image {
-  width: 220px;
-  height: 220px;
-  /* margin: 5px; */
+  width: 150px;
+  height: 150px;
   cursor: pointer;
-  margin-left: 6%;
-  margin-top: 5%;
+  margin-top: 10px;
 }
 
 .cart_content {
-  float: left;
+  /* background-color: red; */
   display: flex;
-  flex-direction: column;
-  margin-left: 5%;
+  /* flex-direction: column; */
   cursor: pointer;
-  margin-top: 3%;
-  font-size: 13px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 750;
+  margin: 5px;
+  margin-top: 10px;
 }
 
 .small_cart_content {
-  float: left;
+  /* float: left; */
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin-top: 8%;
   cursor: pointer;
-  margin-top: 3%;
   font-size: 13px;
+  background-color: #fff;
+  font-weight: 600;
 }
 
 .btn {
-  cursor: pointer;
-  float:  right;
-  position: relative;
-  top: 8%;
-  right: 5%;
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  box-sizing: border-box;
+  /* margin-right: -10px; */
+  width: 33%;
+}
+
+.b{
+  padding: 8%;
 }
 
 .delete {
   cursor: pointer;
-  float: right;
-  margin-top: 40px;
-  position: relative;
-  top: 6%;
-  right: 5%;
-}
-
-button {
   border: 0px solid;
-  background-color: orange;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0px 0px 7px;
   cursor: pointer;
+  position: center;
+  width: 120px;
+  margin-top: 65px;
+  margin-right: 5px;
 }
 
-/* #total */
+.clearCartButton {
+  text-align: center;
+}
 
+.Buy {
+  padding: 8px;
+  margin-right: 95px;
+  width: 73px;
+  background-color: #77bfa3 ;
+  box-shadow: none;
+}
+.clearCart {
+  padding: 8px;
+  margin-left: 95px;
+  background-color: #c75146;
+  box-shadow: none;
+}
+
+button {
+  border: 0px solid;
+  background-color: #293241;
+  /* #d90429 */
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px;
+  cursor: pointer;
+  /* width: 155px;
+  margin-top: 140px; */
+}
+
+.totalPrice {
+  background-color: #eae1df;
+  height: 35px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5%;
+  font-weight: 900;
+}
 
 button:hover {
   box-shadow: 0 0 10px;
 }
 
 .title-1 {
-  width: 75%;
+  margin: 0 auto  ;
   text-align: center;
   align-self: center;
-  cursor: pointer;
   font-size: 29px;
   font-family: 'Raleway', sans-serif;
+  color: #293241;
 }
 
 .title-2 {
@@ -208,9 +262,20 @@ button:hover {
   cursor: pointer;
   font-size: 29px;
   font-family: 'Raleway', sans-serif;
-
 }
 
+.character {
+  font-size: 14px;
+  width: 100px;
+  position: absolute;
+  top: 30%;
+}
+
+@media only screen and (max-width:400px) {
+  .btn {
+    left: 65%;
+  }
+}
 .add{
   margin-bottom: 10px;
 }
