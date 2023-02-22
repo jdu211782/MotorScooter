@@ -29,6 +29,7 @@ body {
   padding: 1%;
   font-size: 1.8rem;
   color: #fff;
+  cursor: default;
 }
 
 .cart-icon{
@@ -110,8 +111,8 @@ body {
   height: 260px;
   background-color:#fff;
   /* #edf2f4; #8d99ae; */
-  color: #252422;
-  margin: 5%;
+  color: #293241;
+  margin: 3%;
   box-shadow: 0 0 5px;
   border-radius: 10px;
   transition: 0.5s;
@@ -142,14 +143,12 @@ body {
 .image {
   width: 230px;
   height: 230px;
-  cursor: pointer;
   margin-top: 15px;
 }
 
 .small_image {
   width: 150px;
   height: 150px;
-  cursor: pointer;
   margin-top: 10px;
 }
 
@@ -157,7 +156,7 @@ body {
   /* background-color: red; */
   display: flex;
   /* flex-direction: column; */
-  cursor: pointer;
+  cursor: default;
   font-size: 17px;
   font-family: 'Roboto', sans-serif; 
   font-weight: 750;
@@ -170,7 +169,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 8%;
-  cursor: pointer;
+  cursor: default;
   font-size: 13px;
   background-color: #fff;
   font-weight: 600;
@@ -240,6 +239,7 @@ button {
   font-family: 'Raleway', sans-serif;
   margin-top: 5%;
   font-weight: 900;
+  cursor: default;
 }
 
 button:hover {
@@ -253,6 +253,7 @@ button:hover {
   font-size: 29px;
   font-family: 'Raleway', sans-serif;
   color: #293241;
+  cursor: default;
 }
 
 .title-2 {
